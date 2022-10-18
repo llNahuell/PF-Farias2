@@ -182,23 +182,141 @@ ol.cv li{
 /* links */
 
 .links{
-    margin-left: 20px;
-    padding: 10px;
+    margin-left: 10px;
     font-size: 30px;
 }
 
+.tiroides{
+    width: 380px;
+    padding: 10px;
+}
 
+.mental{
+    width: 303px;
+    padding: 10px;
+}
 
+.labo{
+    width: 460px;
+    padding: 10px;
+}
 
+/* agradecimiento */
 
+.end{
+    text-align: end;
+    margin-right: 40px;
+}
 
+.agradecimiento{
+    padding: 10px;
+}
 
+.agradecimiento p{
+    margin: 10px;
+}
 
+.agradecimiento img{
+    padding: 20px;
+}
 
+/* laboratorios */
 
+.laboratorios a{
+    margin: 15px;
+    font-size: 21px;
+}
 
+.abbott{
+    width: 60px;
+}
 
+.bago{
+    width: 48px;
+}
 
+.baliarda{
+    width: 71px;
+}
+
+.gsk{
+    width: 150px;
+}
+
+.gador{
+    width: 55px;
+}
+
+.pfizer{
+    width: 52px;
+}
+
+.roche{
+    width: 53px;
+}
+
+.servier{
+    width: 65px;
+}
+
+.lilly{
+    width: 42px;
+}
+
+.roemmers{
+    width: 91px;
+}
+
+.lundbeck{
+    width: 85px;
+}
+
+/* salud mental */
+
+.salud{
+    margin: 10px;
+}
+
+.salud p{
+    font-size: 23px;
+}
+
+.salud a{
+    font-size: 15px;
+    padding: 8px;
+}
+
+.eutimia{
+    width: 258px;
+}
+
+.apsa{
+    width: 58px;
+}
+
+.thma{
+    width: 62px;
+}
+
+.psiquiatria{
+    width: 110px;
+}
+
+.revista1{
+    width: 366px;
+}
+
+.revista2{
+    width: 366px;  
+}
+
+.revista3{
+    width: 286px;
+}
+
+.revista4{
+    width: 230px;
+}
 
 
 
@@ -523,7 +641,7 @@ ol.cv li{
         display: inline-block;
         font-size: 20px;
         padding-inline: 5px;
-        width: 200px;
+        width: 170px;
     }
 
     .lista li{
