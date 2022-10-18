@@ -18,28 +18,24 @@ a{
     background-color: beige;
     display: grid;
     grid-template-areas: 
-    "header" 
-    "menu" 
-    "objetivo" 
-    "lista" 
-    "emergencia" 
-    "mapa" 
+    "header"
+    "main"
     "footer";
-    grid-template-rows: 230px 56px 200px 370px 30px 243px 100px;
+    grid-template-rows: 160px 940px 100px ;
     grid-template-columns: 1fr;
+    grid-row-gap: 5px;
 }
 
 header{
     grid-area: header;
     background-color: rgba(35, 132, 243, 0.89);
-    height: 230px;
 }
 
-img{
+.img{
     height: 77px;
     width: 79px;
-    margin: 40px;
-    scale: 1.5;
+    margin: 20px;
+    scale: 1.3;
 }
 
 h1{
@@ -57,18 +53,15 @@ h3{
 }
 
 .titulo{
-    transform: translateY(-55px);
+    transform: translateY(-75px);
 }
 
-section#menu{
-    grid-area: menu;
-}
+/* menú */
 
 .menu {
     margin-top: 10px;
     text-align: center;
     list-style: none;
-    font-size:0 
 }
 
 .section {
@@ -79,48 +72,52 @@ section#menu{
     padding-inline: 100px;
 }
  
+/* main */
+
+main{
+    grid-area: main;
+}
+
 h4{
     font-size: 30px;
     text-align: center;
     margin-bottom: 15px;
-}
-
-section#objetivo{
-    grid-area: objetivo;
+    margin-top: 15px;
 }
 
 .objetivo p{
     padding: 5px;
 }
 
-section#listas{
-    grid-area: lista;
-}
-
 .lista li{
     padding: 5px;
 }
 
-section#emergencias{
-    grid-area: emergencia;
+.emergencia{
     text-align: center;
     font-size: 25px;
     background-color: rgba(255, 102, 0, 0.623);
+    height: 30px;
 }
 
-section#mapas{
-    grid-area: mapa;
-}
-
-.mapa{
+.mapa2{
     margin-bottom: 5px;
-    padding-left: 5px;
     color: rgba(68, 68, 68, 0.568);
+    text-align: center;
 }
+
+/* footer */
 
 footer{
     grid-area: footer;
     background-color: rgba(35, 132, 243, 0.89);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p{
+    margin-top: 3px;
+    font-size: 18px;
 }
 
 /* CV */
@@ -190,3 +187,425 @@ ol.cv li{
     font-size: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 320px){
+    #grillaHome{
+        grid-template-rows: 160px 1310px 80px;
+    }
+
+    .img{
+        height: 45px;
+        width: 47px;
+        margin: 15px;
+    }
+
+    h1{
+        font-size: 16px;
+        margin-left: 80px;
+        transform: translateY(-50px);       
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .titulo{
+        transform: translateY(-10px);
+    }
+
+    .section{
+        display: inline-block;
+        font-size: 14px;
+        padding-inline: 5px;
+        width: 70px;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    #grillaHome{
+        grid-template-rows: 160px 1350px 80px;
+    }
+
+    .img{
+        height: 50px;
+        width: 52px;       
+    }
+
+    h1{
+        font-size: 19px;
+        margin-left: 90px;
+        transform: translateY(-60px);       
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+
+    .titulo{
+        transform: translateY(-34px);
+    }
+
+    .section{
+        display: inline-block;
+        font-size: 14px;
+        padding-inline: 5px;
+        width: 70px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 50px;
+    }    
+    
+    footer p{
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width: 329px) and (max-width: 356px){
+    #grillaHome{
+        grid-template-rows: 160px 1320px 80px;
+    }
+}
+
+@media only screen and (min-width: 357px) and (max-width: 378px){
+    #grillaHome{
+        grid-template-rows: 160px 1290px 80px;
+    }
+}
+
+@media only screen and (min-width: 379px) and (max-width: 424px){
+    #grillaHome{
+        grid-template-rows: 160px 1250px 80px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 480px){
+    #grillaHome{
+        grid-template-rows: 160px 1210px 80px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 506px){
+    #grillaHome{
+        grid-template-rows: 160px 1210px 80px;
+    }
+
+    .img{
+        height: 65px;
+        width: 67px;       
+    }
+
+    h1{
+        font-size: 25px;
+        margin-left: 110px;
+        transform: translateY(-65px);       
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .titulo{
+        transform: translateY(-47px);
+    }
+
+    .section{
+        display: inline-block;
+        font-size: 20px;
+        padding-inline: 5px;
+        width: 110px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 50px;
+    }   
+}
+
+@media only screen and (min-width: 507px) and (max-width: 599px){
+    #grillaHome{
+        grid-template-rows: 160px 1180px 80px;
+    }
+
+    .img{
+        height: 65px;
+        width: 67px;       
+    }
+
+    h1{
+        font-size: 25px;
+        margin-left: 90px;
+        transform: translateY(-65px);
+        text-align: center;   
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .titulo{
+        transform: translateY(-47px);
+    }
+
+    .section{
+        display: inline-block;
+        font-size: 20px;
+        padding-inline: 5px;
+        width: 120px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 50px;
+    }   
+}
+
+@media only screen and (min-width: 528px) and (max-width: 588px){
+    #grillaHome{
+        grid-template-rows: 160px 1160px 80px;
+    }
+}
+
+@media only screen and (min-width: 588px) and (max-width: 599px){
+    #grillaHome{
+        grid-template-rows: 160px 1150px 80px;
+    }
+
+    h1{
+        text-align: center;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 688px){
+    #grillaHome{
+        grid-template-rows: 160px 1120px 80px;
+    }
+
+    .img{
+        height: 65px;
+        width: 67px;       
+    }
+
+    h1{
+        font-size: 25px;
+        margin-left: 50px;
+        transform: translateY(-65px); 
+        text-align: center;      
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .titulo{
+        transform: translateY(-47px);
+    }
+
+    .section{
+        display: inline-block;
+        font-size: 20px;
+        padding-inline: 5px;
+        width: 120px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 30px;
+    }   
+}
+
+@media only screen and (min-width: 689px) and (max-width: 811px){
+    #grillaHome{
+        grid-template-rows: 160px 1080px 80px;
+    }
+
+    .img{
+        height: 65px;
+        width: 67px;       
+    }
+
+    h1{
+        font-size: 25px;
+        margin-left: 50px;
+        transform: translateY(-65px); 
+        text-align: center;      
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .titulo{
+        transform: translateY(-47px);
+    }
+
+    .section{
+        display: inline-block;
+        font-size: 20px;
+        padding-inline: 5px;
+        width: 200px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 30px;
+    }   
+}
+
+@media only screen and (min-width: 812px) and (max-width: 1007px){
+    #grillaHome{
+        grid-template-rows: 160px 1060px 80px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 35px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 30px;
+    }   
+}
+
+@media only screen and (min-width: 1008px) and (max-width: 1335px){
+    #grillaHome{
+        grid-template-rows: 160px 1030px 80px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 35px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    }
+
+    .emergencia{
+        margin-top: 5px;
+        font-size: 19px;
+        height: 30px;
+    }   
+}
+
+@media only screen and (min-width: 1336px) and (max-width: 1451px){
+    #grillaHome{
+        grid-template-rows: 160px 1010px 80px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 35px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    } 
+}
+
+@media only screen and (min-width: 1452px){
+    #grillaHome{
+        grid-template-rows: 160px 970px 80px;
+    }
+
+    .lista li{
+        padding: 5px;
+        margin-left: 35px;
+        margin-bottom: 3px;
+        list-style-type: none;
+    } 
+}
+
+@media only screen and (min-width: 3000px){
+    #grillaHome{
+        grid-template-rows: 160px 950px 80px;
+    }
+}
