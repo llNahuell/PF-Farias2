@@ -14,20 +14,7 @@ a{
 
 /* index */
 
-#grillaHome{
-    background-color: beige;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-rows: 160px 940px 100px ;
-    grid-template-columns: 1fr;
-    grid-row-gap: 5px;
-}
-
 header{
-    grid-area: header;
     background-color: rgba(35, 132, 243, 0.89);
 }
 
@@ -73,11 +60,6 @@ h3{
 }
  
 /* main */
-
-main{
-    grid-area: main;
-}
-
 h4{
     font-size: 30px;
     text-align: center;
@@ -109,7 +91,6 @@ h4{
 /* footer */
 
 footer{
-    grid-area: footer;
     background-color: rgba(35, 132, 243, 0.89);
     text-align: center;
     padding: 10px;
@@ -122,37 +103,36 @@ footer p{
 
 /* CV */
 
-h1.cv{
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-
-    background-color: rgba(35, 132, 243, 0.89);
-}
-
-h2.cv{
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    background-color: rgba(35, 132, 243, 0.89);
-    
-}
-
-h3.cv{
+h1.cvT{
     font-size: 20px;
     font-weight: normal;
     text-align: center;
     background-color: rgba(35, 132, 243, 0.89);
 }
 
-h4.cv{
+h2.cvT{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-color: rgba(35, 132, 243, 0.89);
+
+}
+
+h3.cvT{
     font-size: 20px;
     font-weight: normal;
     text-align: center;
     background-color: rgba(35, 132, 243, 0.89);
 }
 
-h5.cv{
+h4.cvT{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-color: rgba(35, 132, 243, 0.89);
+}
+
+h5.cvT{
     font-size: 20px;
     font-weight: normal;
     text-align: center;
@@ -160,61 +140,19 @@ h5.cv{
 }
 
 ul.cv{
-    margin-block: 10px;
+    margin-block: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 ul.cv li{
-    margin-block: 10px;
+    margin-block: 5px;
     list-style: none;
 }
 
-ol.cv{
-    margin-block: 10px;
-    padding: 25px;
-}
-
 ol.cv li{
-    margin-block: 20px;
-}
-
-.grids{
-    justify-content: center;
-    align-content: center;
-    display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: repeat(11, auto)
-}
-
-.grids2{
-    display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: repeat(2, auto);
-    justify-content: center;
-    align-content: center;
-}
-
-.grids3{
-    display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: repeat(35, auto);
-    justify-content: center;
-    align-content: center;
-}
-
-.grids4{
-    display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: repeat(65, auto);
-    justify-content: center;
-    align-content: center;
-}
-
-.grids5{
-    display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: repeat(11, auto);
-    justify-content: center;
-    align-content: center;
+    margin-block: 10px;
+    margin-left: 35px;
 }
 
 /* links */
@@ -354,414 +292,4 @@ ol.cv li{
 
 .revista4{
     width: 230px;
-}
-
-
-
-
-@media only screen and (max-width: 320px){
-    #grillaHome{
-        grid-template-rows: 160px 1310px 80px;
-    }
-
-    .img{
-        height: 45px;
-        width: 47px;
-        margin: 15px;
-    }
-
-    h1{
-        font-size: 16px;
-        margin-left: 80px;
-        transform: translateY(-50px);       
-    }
-
-    h2{
-        font-size: 18px;
-    }
-
-    h3{
-        font-size: 14px;
-    }
-
-    .titulo{
-        transform: translateY(-10px);
-    }
-
-    .section{
-        display: inline-block;
-        font-size: 14px;
-        padding-inline: 5px;
-        width: 70px;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 50px;
-    }
-}
-
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-    #grillaHome{
-        grid-template-rows: 160px 1350px 80px;
-    }
-
-    .img{
-        height: 50px;
-        width: 52px;       
-    }
-
-    h1{
-        font-size: 19px;
-        margin-left: 90px;
-        transform: translateY(-60px);       
-    }
-
-    h2{
-        font-size: 19px;
-    }
-
-    h3{
-        font-size: 17px;
-    }
-
-    .titulo{
-        transform: translateY(-34px);
-    }
-
-    .section{
-        display: inline-block;
-        font-size: 14px;
-        padding-inline: 5px;
-        width: 70px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 15px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 50px;
-    }    
-    
-    footer p{
-        font-size: 19px;
-    }
-}
-
-@media only screen and (min-width: 329px) and (max-width: 356px){
-    #grillaHome{
-        grid-template-rows: 160px 1320px 80px;
-    }
-}
-
-@media only screen and (min-width: 357px) and (max-width: 378px){
-    #grillaHome{
-        grid-template-rows: 160px 1290px 80px;
-    }
-}
-
-@media only screen and (min-width: 379px) and (max-width: 424px){
-    #grillaHome{
-        grid-template-rows: 160px 1250px 80px;
-    }
-}
-
-@media only screen and (min-width: 425px) and (max-width: 480px){
-    #grillaHome{
-        grid-template-rows: 160px 1210px 80px;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 506px){
-    #grillaHome{
-        grid-template-rows: 160px 1210px 80px;
-    }
-
-    .img{
-        height: 65px;
-        width: 67px;       
-    }
-
-    h1{
-        font-size: 25px;
-        margin-left: 110px;
-        transform: translateY(-65px);       
-    }
-
-    h2{
-        font-size: 23px;
-    }
-
-    h3{
-        font-size: 20px;
-    }
-
-    .titulo{
-        transform: translateY(-47px);
-    }
-
-    .section{
-        display: inline-block;
-        font-size: 20px;
-        padding-inline: 5px;
-        width: 110px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 15px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 50px;
-    }   
-}
-
-@media only screen and (min-width: 507px) and (max-width: 599px){
-    #grillaHome{
-        grid-template-rows: 160px 1180px 80px;
-    }
-
-    .img{
-        height: 65px;
-        width: 67px;       
-    }
-
-    h1{
-        font-size: 25px;
-        margin-left: 90px;
-        transform: translateY(-65px);
-        text-align: center;   
-    }
-
-    h2{
-        font-size: 23px;
-    }
-
-    h3{
-        font-size: 20px;
-    }
-
-    .titulo{
-        transform: translateY(-47px);
-    }
-
-    .section{
-        display: inline-block;
-        font-size: 20px;
-        padding-inline: 5px;
-        width: 120px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 15px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 50px;
-    }   
-}
-
-@media only screen and (min-width: 528px) and (max-width: 588px){
-    #grillaHome{
-        grid-template-rows: 160px 1160px 80px;
-    }
-}
-
-@media only screen and (min-width: 588px) and (max-width: 599px){
-    #grillaHome{
-        grid-template-rows: 160px 1150px 80px;
-    }
-
-    h1{
-        text-align: center;
-        margin-left: 50px;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 688px){
-    #grillaHome{
-        grid-template-rows: 160px 1120px 80px;
-    }
-
-    .img{
-        height: 65px;
-        width: 67px;       
-    }
-
-    h1{
-        font-size: 25px;
-        margin-left: 50px;
-        transform: translateY(-65px); 
-        text-align: center;      
-    }
-
-    h2{
-        font-size: 23px;
-    }
-
-    h3{
-        font-size: 20px;
-    }
-
-    .titulo{
-        transform: translateY(-47px);
-    }
-
-    .section{
-        display: inline-block;
-        font-size: 20px;
-        padding-inline: 5px;
-        width: 120px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 15px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 30px;
-    }   
-}
-
-@media only screen and (min-width: 689px) and (max-width: 811px){
-    #grillaHome{
-        grid-template-rows: 160px 1080px 80px;
-    }
-
-    .img{
-        height: 65px;
-        width: 67px;       
-    }
-
-    h1{
-        font-size: 25px;
-        margin-left: 50px;
-        transform: translateY(-65px); 
-        text-align: center;      
-    }
-
-    h2{
-        font-size: 23px;
-    }
-
-    h3{
-        font-size: 20px;
-    }
-
-    .titulo{
-        transform: translateY(-47px);
-    }
-
-    .section{
-        display: inline-block;
-        font-size: 20px;
-        padding-inline: 5px;
-        width: 170px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 15px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 30px;
-    }   
-}
-
-@media only screen and (min-width: 812px) and (max-width: 1007px){
-    #grillaHome{
-        grid-template-rows: 160px 1060px 80px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 35px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 30px;
-    }   
-}
-
-@media only screen and (min-width: 1008px) and (max-width: 1335px){
-    #grillaHome{
-        grid-template-rows: 160px 1030px 80px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 35px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    }
-
-    .emergencia{
-        margin-top: 5px;
-        font-size: 19px;
-        height: 30px;
-    }   
-}
-
-@media only screen and (min-width: 1336px) and (max-width: 1451px){
-    #grillaHome{
-        grid-template-rows: 160px 1010px 80px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 35px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    } 
-}
-
-@media only screen and (min-width: 1452px){
-    #grillaHome{
-        grid-template-rows: 160px 970px 80px;
-    }
-
-    .lista li{
-        padding: 5px;
-        margin-left: 35px;
-        margin-bottom: 3px;
-        list-style-type: none;
-    } 
-}
-
-@media only screen and (min-width: 3000px){
-    #grillaHome{
-        grid-template-rows: 160px 950px 80px;
-    }
 }
