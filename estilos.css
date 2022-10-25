@@ -12,6 +12,10 @@ a{
     display: block;
 }
 
+.row{
+    margin: 0 !important;
+}
+
 /* index */
 
 header{
