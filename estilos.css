@@ -64,6 +64,29 @@ h4{
     background-color: rgba(35, 132, 243, 0.89);
 }
 
+.nav-item{
+    padding-inline: 30px;
+    font-size: 20px;
+}
+
+.nav-item :hover{
+    background: linear-gradient(-90deg, rgba(35, 132, 243, 0.89), rgba(252, 252, 252, 0.356), rgba(35, 132, 243, 0.89));
+    background-size: 600% 600%;
+    animation: gradient 3s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: -100%;
+	}
+    100%{
+        background-position: -0%;
+    }
+}
+
 /* main */
 h4{
     font-size: 30px;
