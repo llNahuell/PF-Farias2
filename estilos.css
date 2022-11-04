@@ -69,7 +69,20 @@ h4 {
 .nav-item :hover {
   background: linear-gradient(-90deg, rgba(35, 132, 243, 0.89), rgba(252, 252, 252, 0.356), rgba(35, 132, 243, 0.89));
   background-size: 600% 600%;
-  animation: gradient 3s;
+  -webkit-animation: gradient 3s;
+          animation: gradient 3s;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 
 @keyframes gradient {
@@ -321,6 +334,10 @@ ol.cv li {
   margin-bottom: 10px;
 }
 
+.nleft p {
+  text-align: center;
+}
+
 .nright1 {
   background-image: url(img/historia-de-terapia-familiar-wide.jpg);
   background-size: cover;
@@ -328,43 +345,44 @@ ol.cv li {
 }
 
 .nright2 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/family-g2dea70cc2_640.jpg);
   background-size: cover;
   background-position: center;
+  background-position-y: 330px;
 }
 
 .nright3 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/drogas.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .nright4 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/tratamiento-adicciones620x340.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .nright5 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/salud-mental.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .nright6 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/toadstools-ge77c9078a_640.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .nright7 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/emergências-psiquiátricas.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .nright8 {
-  background-image: url(img/historia-de-terapia-familiar-wide.jpg);
+  background-image: url(img/slide_1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -556,6 +574,4 @@ ol.cv li {
     height: 70px;
     width: 72px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
