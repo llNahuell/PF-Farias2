@@ -156,25 +156,6 @@ ol.cv li{
     padding: 3px;
 }
 
-/* links */
-
-.links{
-    margin-left: 10px;
-    font-size: 30px;
-}
-
-.tiroides{
-    padding: 10px;
-}
-
-.mental{
-    padding: 10px;
-}
-
-.labo{
-    padding: 10px;
-}
-
 /* agradecimiento */
 
 .end{
@@ -195,6 +176,12 @@ ol.cv li{
 }
 
 /* laboratorios */
+
+.labb{
+    background-image: url(img/dna-1532.gif);
+    background-position: center;
+    background-size: 1080px;
+}
 
 .laboratorios a{
     margin: 15px;
@@ -247,8 +234,24 @@ ol.cv li{
 
 /* salud mental */
 
+.saludg{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px;
+    grid-template-rows: auto auto auto;
+    padding: 50px;
+    gap: 20px;
+}
+
 .salud{
-    margin: 10px;
+    padding: 20px;
+    background-color: rgba(35, 132, 243, 0.685);
+}
+
+.saludb{
+    background-image: url(img/brain-gd3d999416_1920.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .salud p{
@@ -277,11 +280,11 @@ ol.cv li{
 }
 
 .revista1{
-    width: 366px;
+    width: 400px;
 }
 
 .revista2{
-    width: 366px;  
+    width: 386px;  
 }
 
 .revista3{
@@ -290,96 +293,6 @@ ol.cv li{
 
 .revista4{
     width: 230px;
-}
-
-// articulos publicados
-
-.art{
-    margin: 10px;
-}
-
-.nright{
-    height: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.nleft{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px solid black;
-    padding: 0px;
-}
-
-.nleft a{
-    margin: 10px;
-}
-
-.nleft p{
-    text-align: center;
-    background-color: $color;
-    border-bottom: 2px solid black;
-    text-shadow: 0 0 1px black;
-}
-
-.nright1{
-    background-image: url(img/historia-de-terapia-familiar-wide.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright2{
-    background-image: url(img/family-g2dea70cc2_640.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright3{
-    background-image: url(img/drogas.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright4{
-    background-image: url(img/tratamiento-adicciones620x340.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright5{
-    background-image: url(img/salud-mental.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright6{
-    background-image: url(img/toadstools-ge77c9078a_640.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright7{
-    background-image: url(img/emergências-psiquiátricas.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright8{
-    background-image: url(img/slide_1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright9{
-    background-image: url(img/historia-de-terapia-familiar-wide.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nright10{
-    background-image: url(img/historia-de-terapia-familiar-wide.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 @media only screen and (max-width: 320px) {
@@ -406,6 +319,20 @@ ol.cv li{
         margin-left: 5px;
         height: 40px;
         width: 40px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+    .saludg{
+        grid-template-columns: 320px;
+    }
+
+    .revista1{
+        width: 266px;
+    }
+
+    .revista2{
+        width: 266px;
     }
 }
 
