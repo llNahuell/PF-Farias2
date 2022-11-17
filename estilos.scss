@@ -18,6 +18,15 @@ a{
 
 $color: rgba(35, 132, 243, 0.89);
 
+.wsp{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-image: url(img/whatsapp-svgrepo-com.svg);
+}
+
 /* index */
 
 header{
@@ -140,6 +149,10 @@ footer p{
     border: 2px solid black;
 }
 
+h2.cvT{
+    margin-top: 5px;
+}
+
 ul.cv{
     margin-block: 5px;
     margin-top: 15px;
@@ -183,53 +196,16 @@ ol.cv li{
     background-size: 1920px, 1080px;
 }
 
+.labg{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
 .laboratorios a{
     margin: 15px;
     font-size: 21px;
-}
-
-.abbott{
-    width: 60px;
-}
-
-.bago{
-    width: 48px;
-}
-
-.baliarda{
-    width: 71px;
-}
-
-.gsk{
-    width: 150px;
-}
-
-.gador{
-    width: 55px;
-}
-
-.pfizer{
-    width: 52px;
-}
-
-.roche{
-    width: 53px;
-}
-
-.servier{
-    width: 65px;
-}
-
-.lilly{
-    width: 42px;
-}
-
-.roemmers{
-    width: 91px;
-}
-
-.lundbeck{
-    width: 85px;
 }
 
 /* salud mental */
@@ -336,6 +312,18 @@ ol.cv li{
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+    .labg{
+        grid-template-columns: 1fr;
+    }
+    
+    .laboratorios a{
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }    
+}
+
 @media only screen and (min-width: 321px) and (max-width: 375px) {
     h1{
         width: 260px !important;
@@ -391,7 +379,7 @@ ol.cv li{
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    h1{
+    h1.home{
         width: 500px !important;
         font-size: 30px;
         transform: translate(10px, 30px);
@@ -418,7 +406,7 @@ ol.cv li{
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    h1{
+    h1.home{
         width: 400px !important;
         font-size: 25px;
         transform: translate(5px, 20px);
@@ -444,8 +432,20 @@ ol.cv li{
     }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 864px) {
+    .nav-item{
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1149px) {
+    .labg{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    h1{
+    h1.home{
         width: 600px !important;
         font-size: 40px;
         transform: translate(5px, 20px);
@@ -472,7 +472,7 @@ ol.cv li{
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    h1{
+    h1.home{
         width: 600px !important;
         font-size: 40px;
         transform: translate(5px, 20px);
@@ -499,7 +499,7 @@ ol.cv li{
 }
 
 @media only screen and (min-width: 1441px) {
-    h1{
+    h1.home{
         width: 600px !important;
         font-size: 40px;
         transform: translate(5px, 20px);
